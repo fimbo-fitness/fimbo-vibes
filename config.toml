@@ -1,14 +1,14 @@
-title = "My New Hugo Site"
+title = "Fimbo Vibes"
 
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts"
+    identifier = "timetable"
+    name = "Timetable"
+    url = "/timetable"
     weight = 10
-
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about"
+    identifier = "news"
+    name = "News"
+    url = "/news"
     weight = 20
+
