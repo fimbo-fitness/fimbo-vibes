@@ -2,13 +2,18 @@ title = "Fimbo Vibes"
 
 [menu]
   [[menu.main]]
+    identifier = "home"
+    name = "Fimbo Vibes"
+    pageref = "/"
+    weight = 10
+  [[menu.main]]
     identifier = "timetable"
     name = "Timetable"
-    url = "/timetable"
-    weight = 10
+    pageref = "/timetable"
+    weight = 20
   [[menu.main]]
     identifier = "news"
     name = "News"
-    url = "/news"
-    weight = 20
+    pageref = "/news"
+    weight = 30
 

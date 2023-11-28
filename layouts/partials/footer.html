@@ -13,9 +13,32 @@
 </script>
 
 <footer>
-	<p class="footer-text">&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+  <div class="footer-contents">
+    <div class="contact left">
+      <a href="">
+        <img src="/icons/facebook.svg"/>
+        @fimbovibes
+      </a>
+      <a href="">
+        <img src="/icons/instagram.svg"/>
+        @fimbovibes
+      </a>
+    </div>
+    <div class="logo-container">
+      <img class="main-logo" src="/identity/icon-green.png"/>
+    </div>
+    <div class="contact right">
+      <a href="">
+        fimbofitness@gmail.com
+        <img src="/icons/mail.svg"/>
+      </a>
+      <a href="tel:00256-788-239507">
+        +256 788 239507
+        <img src="/icons/phone.svg"/>
+      </div>
+    </div>
+  </div>
+	<!-- <p class="footer-text">&copy;{{ dateFormat "2006" now }} {{ .Site.Title }}</p> -->
 </footer>
 </body>
-
-
 </html>

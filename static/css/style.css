@@ -1,23 +1,20 @@
-/* LAYOUT */
+@import 'fonts.css';
 
 :root {
+  --font-header: Jost, Roboto, Oxygen, Ubuntu, sans-serif;
   --accent-dark: #098f6b;
   --accent-light: #4cffcf;
 
   --white: #ffffff;
-  --black: #000000
+  --black: #000000;
+  --grey: #3c3c3c;
 }
 
 body {
   color: var(--white);
   background-color: var(--black);
   margin: 0 auto;
-  /* padding: 1rem; */
 }
-
-/* NAVIGATION */
-
-/* LISTS */
 
 .post-snippet {
   margin-bottom: 1rem;
@@ -27,23 +24,67 @@ body {
   margin-bottom: 0.25rem;
 }
 
+main {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* Footer */
 footer {
-  background-color: var(--accent-dark);
-  width: 100%;
-  height: 3rem;
+  position: fixed;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
+  width: 100%;
+  border-top: 2px solid var(--grey);
 }
 
+.footer-contents {
+  margin: 0 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact.left {
+  align-items: flex-start;
+}  
+.contact.right {
+  align-items: end;
+}
+
+.contact a {
+  color: var(--accent-light);
+  display: flex;
+  align-items: center;
+}
+
+.contact a img {
+  height: 2rem;
+}
+
+.main-logo {
+  height: 8rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Header */
 header {
-  background-color: var(--accent-light);
+  border-bottom: 2px solid var(--grey);
+  margin: 0 1rem;
 }
-
 
 .site-nav {
   display: flex;
@@ -51,14 +92,19 @@ header {
 }
 
 .site-nav a {
+  font-family: Jost;
   display: block;
   padding: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
+  color: var(--white);
+  text-transform: uppercase;
+  color: var(--accent-dark);
 }
 
-.site-nav .logo {
-  font-weight: bold;
-  padding-left: 0;
+a.active {
+  color: var(--accent-light);
+  font-weight: 600;
 }
 
 .main-menu {

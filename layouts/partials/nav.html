@@ -1,15 +1,15 @@
 <header class="site-header">
   <nav class="site-nav">
     <ul class="main-menu">
-      <li>
-        <a class="logo" href="/">
-          Fimbo Vibes
-        </a>
-      </li>
+      {{ $currentPage := . }}
       {{ range.Site.Menus.main }}
-      <li>
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      </li>
+        <li>
+          {{ if $currentPage.IsMenuCurrent "main" . }}
+            <a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+          {{ else }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          {{ end }}
+        </li>
       {{ end }}
     </ul>
   </nav>
