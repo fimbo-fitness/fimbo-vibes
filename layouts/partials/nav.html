@@ -1,16 +1,17 @@
-<header class="site-header">
-  <nav class="site-nav">
+<header>
+  <nav>
     <ul class="main-menu">
       {{ $currentPage := . }}
       {{ range.Site.Menus.main }}
-        <li>
+      <li>
           {{ if $currentPage.IsMenuCurrent "main" . }}
             <a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
           {{ else }}
             <a href="{{ .URL }}">{{ .Name }}</a>
           {{ end }}
         </li>
-      {{ end }}
-    </ul>
-  </nav>
+        {{ end }}
+      </ul>
+    </nav>
 </header>
+<img class="top-left-corner" src="/identity/corner-design-top-left.svg"/>

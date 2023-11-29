@@ -3,7 +3,7 @@ title = "Fimbo Vibes"
 [menu]
   [[menu.main]]
     identifier = "home"
-    name = "Fimbo Vibes"
+    name = "Home"
     pageref = "/"
     weight = 10
   [[menu.main]]
