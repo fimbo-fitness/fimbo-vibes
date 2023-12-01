@@ -30,10 +30,11 @@ main {
   z-index: 10;
 }
 
-.site-contents {
+.site-content {
   margin: auto;
   margin-top: 0;
   z-index: 30;
+  max-width: 48rem;
 }
 
 a {
@@ -42,6 +43,28 @@ a {
 
 a.big {
   font-size: 1.5rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.1rem;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+.blurb {
+  font-style: italic;
+  color: var(--accent-light);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+h1, h2, h3, h3 {
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  color: var(--accent-light);
+  font-weight: 400;
+  margin: 1rem 0 0.2rem 0;
 }
 
 /* Header */
