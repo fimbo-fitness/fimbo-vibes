@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+
+<div class="site-content">
+    <div class="center-timetable">
+        <span class="back-link">
+            &#8626;
+            <a class="back-link" href="/timetable">Return to Timetable</a>
+        </span>
+        <h1 class="post-title">{{ .Title }}</h1>
+        <ul class="times">
+            {{ range .Params.classes }}
+            <li>
+                {{ . }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    <hr/>
+    <div class="extra-info">
+        {{ .Content }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

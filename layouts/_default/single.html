@@ -1,14 +1,20 @@
 {{ partial "header.html" . }}
 
-<div class="site-content">
-	<h1 class="post-title">{{ .Title }}</h1>
-	<span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
-	
+<div class="site-content center">
+	<div class="center-timetable">
+        <span class="back-link">
+            &#8626;
+            <a class="back-link" href="/news">Return to News</a>
+        </span>
+        <h1 class="post-title">{{ .Title }}</h1>
+		<span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+	</div>
 	{{ if .Params.image }}
 	<img src="{{ .Params.image }}" >
 	{{ end }}
-	
-	{{ .Content }}
+	<p>
+		{{ .Content }}
+	</p>
 </div>
 
 {{ partial "footer.html" . }}

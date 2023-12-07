@@ -31,10 +31,17 @@ main {
 }
 
 .site-content {
-  margin: auto;
   margin-top: 0;
   z-index: 30;
   max-width: 48rem;
+}
+
+.thin {
+  max-width: 12rem;
+}
+
+.center {
+  margin: 0 auto auto auto;
 }
 
 a {
@@ -48,7 +55,7 @@ a.big {
 p {
   font-weight: 300;
   font-size: 1.1rem;
-  font-family: Helvetica, sans-serif;
+  font-family: var(--font-header);
   line-height: 1.5rem;
 }
 
@@ -56,6 +63,7 @@ p {
   font-style: italic;
   color: var(--accent-light);
   font-size: 1.2rem;
+  font-family: var(--font-header);
   font-weight: 300;
 }
 
@@ -116,6 +124,8 @@ footer {
   /* position: fixed;
   bottom: 0; */
   width: 100%;
+  font-family: var(--font-header);
+  font-weight: 300;
 }
 
 .footer-contents {
@@ -133,7 +143,7 @@ footer {
 
 .contact.left {
   align-items: flex-start;
-}  
+}
 .contact.right {
   align-items: end;
 }
@@ -145,6 +155,7 @@ footer {
 
 .contact a img {
   height: 2rem;
+  margin: 0 0.2rem;
 }
 
 .footer-logo {
@@ -201,7 +212,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
   }
-} 
+}
 
 @media screen and (max-width: 380px) {
   .footer-logo-container {
@@ -214,6 +225,41 @@ footer {
   margin-bottom: 1rem;
 }
 
-.post-snippet h3 {
+.post-snippet {
   margin-bottom: 0.25rem;
+}
+
+.post-date {
+    font-family: var(--font-header);
+}
+
+/* Timetable */
+.day {
+  text-decoration: none;
+}
+
+h3.day {
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.times {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  font-family: var(--font-header);
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.back-link {
+  font-family: var(--font-header);
+  font-weight: 300;
+  color: var(--accent-light);
+}
+
+.center-timetable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
