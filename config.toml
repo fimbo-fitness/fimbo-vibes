@@ -5,21 +5,21 @@ baseURL = "https://amazing-fairy-5e81f2.netlify.app/"
   [[menu.main]]
     identifier = "home"
     name = "Home"
-    pageref = "/"
+    pageref = "https://amazing-fairy-5e81f2.netlify.app/"
     weight = 10
   [[menu.main]]
     identifier = "timetable"
     name = "Timetable"
-    pageref = "/timetable"
+    pageref = "https://amazing-fairy-5e81f2.netlify.app/timetable"
     weight = 20
   [[menu.main]]
     identifier = "instructors"
     name = "Instructors"
-    pageref = "/instructors"
+    pageref = "https://amazing-fairy-5e81f2.netlify.app/instructors"
     weight = 30
   [[menu.main]]
     identifier = "news"
     name = "News"
-    pageref = "/news"
+    pageref = "https://amazing-fairy-5e81f2.netlify.app/news"
     weight = 40
 
