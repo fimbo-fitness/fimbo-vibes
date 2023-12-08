@@ -17,6 +17,25 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "timetable" # Used in routes, e.g., /admin/collections/post
+    label: "Timetable" # Used in the UI
+    folder: "content/timetable" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    create: false # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Classes", name: "classes", widget: "list" }
+  - name: "instructors" # Used in routes, e.g., /admin/collections/post
+    label: "Instructors" # Used in the UI
+    folder: "content/instructors" # The path to the folder where the documents are stored
+    path: "{{slug}}/index"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Job description", name: "job_title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Blurb", name: "blurb", widget: "string" }
+      - { label: "Display Order (lower number = first)", name: "order", widget: "number" }
   - name: "pages"
     label: "Pages"
     files:
@@ -36,9 +55,3 @@ collections:
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
-      - file: "content/timetable/index.md"
-        label: "Timetable"
-        name: "timetable"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "text" }

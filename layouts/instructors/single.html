@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+<div class="site-content center">
+    <div class="info">
+        <h1 class="post-title">{{ .Params.Name }}</h1>
+        <h3>{{ .Params.job_title }}</h3>
+    </div>
+    {{ if .Params.image }}
+	<img src="{{ .Params.image }}" >
+	{{ end }}
+    <div class="extra-info">
+        <p>{{ .Params.blurb }}</p>
+        <p>{{ .Content }}</p>
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

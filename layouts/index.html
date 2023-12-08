@@ -6,9 +6,19 @@
 
     <div class="blurb">{{ .Params.blurb }}</div>
 
-    <h2>{{ .Params.section.heading }}</h2>
+    {{ range.Params.sections }}
 
-    <p>{{ .Params.section.text }}</p>
+    <h2>{{ .heading }}</h2>
+
+    <p>{{ .text }}</p>
+
+    <div class="image-container">
+        <img class="image" src="images/{{ .image }}"/>
+    </div>
+    <hr/>
+    {{ end }}
+
+    {{ .Content }}
 </div>
 
 {{ partial "footer.html" . }}
