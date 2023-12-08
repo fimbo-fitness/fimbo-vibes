@@ -1,4 +1,5 @@
 title = "Fimbo Vibes"
+baseURL = "https://amazing-fairy-5e81f2.netlify.app/"
 
 [menu]
   [[menu.main]]
