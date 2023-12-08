@@ -1,24 +1,25 @@
 title = "Fimbo Vibes"
+baseURL = "https://amazing-fairy-5e81f2.netlify.app/"
 
 [menu]
   [[menu.main]]
     identifier = "home"
     name = "Home"
-    pageref = "https://amazing-fairy-5e81f2.netlify.app/"
+    url = "/"
     weight = 10
   [[menu.main]]
     identifier = "timetable"
     name = "Timetable"
-    pageref = "https://amazing-fairy-5e81f2.netlify.app/timetable"
+    url = "/timetable"
     weight = 20
   [[menu.main]]
     identifier = "instructors"
     name = "Instructors"
-    pageref = "https://amazing-fairy-5e81f2.netlify.app/instructors"
+    url = "/instructors"
     weight = 30
   [[menu.main]]
     identifier = "news"
     name = "News"
-    pageref = "https://amazing-fairy-5e81f2.netlify.app/news"
+    url = "/news"
     weight = 40
 
