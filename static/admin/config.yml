@@ -25,10 +25,10 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { 
-          label: "Classes", 
+          label: "Classes",
           name: "classes",
           widget: "list",
-          field: {
+          field: { 
             label: "Class",
             name: "class",
             widget: "string"
@@ -54,13 +54,17 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Blurb", name: "blurb", widget: "text" }
-          - {
-              label: "Section",
+          - { 
+              label: "Sections",
               name: "section",
-              widget: "object",
-              fields:
-                [
-                  { label: "Heading", name: "heading", widget: string },
-                  { label: "Text", name: "text", widget: "text" },
-                ],
+              widget: "list",
+              "type": { 
+                  label: "Section",
+                  name: "section",
+                  widget: "object",
+                  fields: [
+                    { label: "Heading", name: "heading", widget: string },
+                    { label: "Text", name: "text", widget: "text" },
+                  ],
             }
+          }
