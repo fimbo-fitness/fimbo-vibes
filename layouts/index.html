@@ -7,15 +7,20 @@
     <div class="blurb">{{ .Params.blurb }}</div>
 
     {{ range.Params.sections }}
+        <h2>{{ .heading }}</h2>
+        <p>{{ .text }}</p>
+        <div class="image-container">
+            <img class="image" src="images/{{ .image }}"/>
+        </div>
+        <hr/>
+    {{ end }}
 
-    <h2>{{ .heading }}</h2>
-
-    <p>{{ .text }}</p>
-
-    <div class="image-container">
-        <img class="image" src="images/{{ .image }}"/>
-    </div>
-    <hr/>
+    {{ if .Params.video }}
+        {{ $s := replaceRE `/watch\?` "/embed?" .Params.video }}
+        <div class="video-container">
+            <iframe src="{{ $s }}" class="video" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
     {{ end }}
 
     {{ .Content }}
