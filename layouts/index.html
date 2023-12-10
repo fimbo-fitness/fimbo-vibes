@@ -6,8 +6,14 @@
 
     <div class="blurb">{{ .Params.blurb }}</div>
 
-    <h1> {{ .Params.intro.heading }} </h1>
-    <p> {{ .Params.intro.text }} </p>
+    {{ range.Params.sections }}
+        <h2>{{ .heading }}</h2>
+        <p>{{ .text }}</p>
+        <div class="image-container">
+            <img class="image" src="images/{{ .image }}"/>
+        </div>
+        <hr/>
+    {{ end }}
 
     {{ if .Params.video }}
         {{ $s := replaceRE `/watch\?v=` "/embed/" .Params.video }}
