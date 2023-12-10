@@ -51,13 +51,12 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Blurb", name: "blurb", widget: "text" }
-          - {
-              label: "Introduction (appears first at top of page)",
-              name: "intro",
-              widget: "object",
-              fields:
-                -{label: "Header", name: "header", widget: "string"}
-                -{label: "Text", name: "text", widget: "string"}
-            }
+          - label: "Sections (These appear first above video)"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Image", name: "imge", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Featured Video URL", name: "video", widget: "string" }
