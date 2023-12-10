@@ -6,7 +6,9 @@
         <h3>{{ .Params.job_title }}</h3>
     </div>
     {{ if .Params.image }}
-	<img src="{{ .Params.image }}" >
+    <div class="center-timetable">
+        <img class="instructor-image" src="{{ .Params.image }}" >
+    </div>
 	{{ end }}
     <div class="extra-info">
         <p>{{ .Params.blurb }}</p>
