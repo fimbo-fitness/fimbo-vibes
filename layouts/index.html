@@ -6,17 +6,11 @@
 
     <div class="blurb">{{ .Params.blurb }}</div>
 
-    {{ range.Params.sections }}
-        <h2>{{ .heading }}</h2>
-        <p>{{ .text }}</p>
-        <div class="image-container">
-            <img class="image" src="images/{{ .image }}"/>
-        </div>
-        <hr/>
-    {{ end }}
+    <h1> {{ .Params.intro.heading }} </h1>
+    <p> {{ .Params.intro.text }} </p>
 
     {{ if .Params.video }}
-        {{ $s := replaceRE `/watch\?` "/embed?" .Params.video }}
+        {{ $s := replaceRE `/watch\?v=` "/embed/" .Params.video }}
         <div class="video-container">
             <iframe src="{{ $s }}" class="video" frameborder="0" allowfullscreen>
             </iframe>
