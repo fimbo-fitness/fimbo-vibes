@@ -11,6 +11,7 @@ sections:
       their fitness goals through engaging and effective workouts. Join the
       Fimbo Vibes family and work together towards a healthier, happier future.
     image: image1.jpeg
+    imge: images/image1.jpeg
   - heading: Another section
     text: Situated in the heart of Kampala, our daily Afro-fusion dance fitness
       classes provide an exhilarating full-body workout to suit all fitness
@@ -19,16 +20,15 @@ sections:
       health objectives. We work in various gyms throughout the city, so there
       is always a class to suit your needs
     image: image2.jpeg
+    imge: images/image4.jpeg
+video: https://www.youtube.com/watch?v=ImCdU5SqvpU
 ---
-
-![A image](/images/image1.jpeg)
-
 ## Another section
+
 Situated in the heart of Kampala, our daily Afro-fusion dance fitness classes provide an exhilarating full-body workout to suit all fitness levels. Beyond physical fitness, we’re committed to promoting mental well-being throughout fitness and helping participants achieve their health objectives. We work in various gyms throughout the city, so there is always a class to suit your needs
 
-![A image](/images/image2.jpeg)
-
 # Gym Classes
+
 Situated in the heart of Kampala, our daily Afro-fusion dance fitness classes provide an exhilarating full-body workout to suit all fitness levels. Beyond physical fitness, we’re committed to promoting mental well-being throughout fitness and helping participants achieve their health objectives. We work in various gyms throughout the city, so there is always a class to suit your needs
 
 ![A image](/images/image3.jpeg)
