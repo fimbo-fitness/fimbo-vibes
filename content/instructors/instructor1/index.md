@@ -1,10 +1,11 @@
 ---
-name: Instructor 1
+name: Luganda Reagan Kenneth
 layout: single
 type: instructors
-order: 2
-job_title: Instructor
+job_title: Junior Instructor
 image: image17.jpeg
+blurb: Test blurb
+order: 2
 ---
 
 A bit about this instructor
